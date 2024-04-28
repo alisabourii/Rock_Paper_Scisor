@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock-Paper-Scisor</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <img src="src/img/reverse.png" alt="" style="margin: 1%; float: left;" width="50px" height="50px" onclick="refresh()">
+      
+      <h1 style="float: left; margin-left: 30%; background-color: gray; color: white;">Win</h1>
+      <h1 style="float: left; margin-left: 7%; background-color: gray; color: white;" >Equal</h1>
+      <h1 style="float: left; margin-left: 7%; background-color: gray; color: white;">Win</h1>
+
+      <img src="src/img/sun.png" alt="" style="margin-left: 27%; margin-top: 2%; " width="50px" height="50px" onclick="themChange()" id="themchange">
+
+      <h1 style="float: left; margin-left: 38%; color: rgb(0, 94, 255);" id="userPuan">0</h1>
+      <h1 style="float: left; margin-left: 11%;" id="equalPuan">0</h1>
+      <h1 style="float: left; margin-left: 11%; color: rgb(0, 94, 255);" id="computerPuan">0</h1><br>
+
+      <h1 style="margin-top: 7%; margin-left: 47%;">Round</h1>
+      <h1 style="margin-top: 1%; margin-left: 50%;" id="round">0</h1>
+
+      <img src="src/img/rock2.png" alt="" style="margin-left: 0%; object-position: fix;">
+      <img src="src/img/rock1.png" alt="" style="margin-left: 42%; position: static;" >
+
+      <div class="itemsUser">
+        <img src="src/img/paper-user.png" width="100px" height="100px" onclick="userPaper()">
+        <img src="src/img/rock-user.png" style="margin-left: 10%;"  width="100px" height="100px" onclick="userRock()">
+        <img src="src/img/scissors-user.png" style="margin-left: 10%;" width="100px" height="100px" onclick="userScissors()">
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+      <script src="app.js"></script>
+</body>
+</html>
