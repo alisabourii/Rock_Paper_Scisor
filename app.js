@@ -44,17 +44,26 @@ function gamePlay(user){
         var rnd = Math.floor(Math.random() * 3);
         Round ++;
         
-        if(user == "Rock" && itemsComputer[rnd] == "Rock"){equal += 1;}
-        else if(user == "Rock" && itemsComputer[rnd] == "Scissors"){userWin+=1; userWinner();}
-        else if(user == "Rock" && itemsComputer[rnd] == "Paper"){ComputerWin+=1;}
+        if(user == "Rock" && itemsComputer[rnd] == "Rock")
+                {equal += 1;}
+        else if(user == "Rock" && itemsComputer[rnd] == "Scissors")
+                {userWin+=1; userWinner();}
+        else if(user == "Rock" && itemsComputer[rnd] == "Paper")
+                {ComputerWin+=1;}
 
-        else if(user == "Paper" && itemsComputer[rnd] == "Paper"){equal += 1;}
-        else if(user == "Paper" && itemsComputer[rnd] == "Scissors"){ComputerWin+=1;}
-        else if(user == "Paper" && itemsComputer[rnd] == "Rock"){userWin+=1; userWinner();}
+        else if(user == "Paper" && itemsComputer[rnd] == "Paper")
+                {equal += 1;}
+        else if(user == "Paper" && itemsComputer[rnd] == "Scissors")
+                {ComputerWin+=1;}
+        else if(user == "Paper" && itemsComputer[rnd] == "Rock")
+                {userWin+=1; userWinner();}
 
-        else if(user == "Scissors" && itemsComputer[rnd] == "Scissors"){equal += 1;}
-        else if(user == "Scissors" && itemsComputer[rnd] == "Paper"){userWin+=1; userWinner();}
-        else if(user == "Scissors" && itemsComputer[rnd] == "Rock"){ComputerWin+=1;}
+        else if(user == "Scissors" && itemsComputer[rnd] == "Scissors")
+                {equal += 1;}
+        else if(user == "Scissors" && itemsComputer[rnd] == "Paper")
+                {userWin+=1; userWinner();}
+        else if(user == "Scissors" && itemsComputer[rnd] == "Rock")
+                {ComputerWin+=1;}
 
         
         document.getElementById("userPuan").innerHTML=userWin;
